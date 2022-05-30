@@ -1,8 +1,17 @@
+body {
+    background-image: url(background-image.jpg);
+    background-attachment: fixed;
+    background-color: aqua;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .wrapper {
     position: fixed;
     display: flex;
     width: 100%;
     align-items: stretch;
+    top: 0px;
 }
 
 .sidebar {
@@ -22,35 +31,54 @@
     height: 533px;
     border-radius: 5%;
     margin-right: 30px;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
+    float: left;
+}
+
+.bio-content {
+    text-align: right;
 }
 
 .general-container {
     margin-left: 125px;
     margin-right: 25px;
+    border-radius: 2%;
 }
 
 .about-content {
     display: flex;
 }
 
+.skill-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.skill-card {
+    width: 200px;
+    height: 200px;
+}
+
 @media all and (min-width: 1500px) {
     .general-container {
-        max-width: 1000px;
+        max-width: 1200px;
         margin: auto;
     }
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1200px) {
     .general-container {
-        max-width: 1000px;
+        max-width: 1100px;
+    }
+    .about-content {
+        display: block;
     }
 }
 
 @media (max-width: 768px) {
-    .about-content {
-        display: block;
-    }
     .sidebar {
         width: 80px;
     }
@@ -68,8 +96,8 @@
 
 @media (max-width: 650px) {
     .bio-img {
-        width: 200px;
-        height: 355px;
+        width: 190px;
+        height: 337px;
         margin-bottom: 25px;
     }
 }
