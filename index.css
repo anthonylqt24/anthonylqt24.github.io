@@ -29,20 +29,21 @@ body {
 .bio-img {
     width: 300px;
     height: 533px;
-    border-radius: 5%;
-    margin-right: 30px;
-    margin-bottom: 10px;
+    margin: 2%;
     float: left;
+    border: 3px solid #000;
 }
 
 .bio-content {
-    text-align: right;
+    text-align: end;
+    padding: 2%;
 }
 
 .general-container {
     margin-left: 125px;
     margin-right: 25px;
-    border-radius: 2%;
+    opacity: 0.9;
+    background-color: rgb(250, 250, 250);
 }
 
 .about-content {
@@ -62,6 +63,22 @@ body {
     height: 200px;
 }
 
+.carousel-inner {
+    height: 400px;
+}
+
+.carousel-caption {
+    top: 50%;
+}
+
+.contact-form {
+    width: 50%;
+}
+
+.btn {
+    width: 100%;
+}
+
 @media all and (min-width: 1500px) {
     .general-container {
         max-width: 1200px;
@@ -76,9 +93,12 @@ body {
     .about-content {
         display: block;
     }
+    .carousel-inner {
+        height: 500px;
+    }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .sidebar {
         width: 80px;
     }
@@ -92,6 +112,12 @@ body {
         height: 533px;
         margin-bottom: 25px;
     }
+    .carousel-inner {
+        height: 650px;
+    }
+    .contact-form {
+        width: 80%;
+    }
 }
 
 @media (max-width: 650px) {
@@ -99,5 +125,17 @@ body {
         width: 190px;
         height: 337px;
         margin-bottom: 25px;
+    }
+    .carousel-inner {
+        height: 800px;
+    }
+    .contact-form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 350px) {
+    .carousel-inner {
+        height: 1720px;
     }
 }
