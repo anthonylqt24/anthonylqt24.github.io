@@ -54,3 +54,17 @@ function handleSubmit(event) {
   // Make sure the default event will not be called
   event.preventDefault();
 }
+
+function changeNavBarOrientation() {
+  let width = document.getElementById('main').offsetWidth;
+  let navBar = document.getElementById('navbar');
+
+  if (width <= 567) {
+    navBar.classList.add("navbar-expand");
+  } else {
+    navBar.classList.remove("navbar-expand");
+  }
+}
+
+window.addEventListener('resize', changeNavBarOrientation);
+window.onload = changeNavBarOrientation;

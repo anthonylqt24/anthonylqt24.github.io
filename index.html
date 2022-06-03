@@ -10,9 +10,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
   </head>
   <body>
-    <main>
+    <main id="main">
       <div class="wrapper">
-        <nav class="navbar navbar-dark bg-dark bg-opacity-75 sidebar">
+        <nav class="navbar navbar-dark bg-dark bg-opacity-75 sidebar" id="navbar">
           <div class="mx-auto" id="navbarBody">
             <ul class="navbar-nav">
               <li>
@@ -39,12 +39,15 @@
           </div>
         </nav>
       </div>
+      <section class="general-container rounded bg-light p-2 greeting">
+        <h1 class="pb-2 fs-1 fw-bold text-center">Hello, I am Tony Le, Software Engineer located in PDX.</h1>
+      </section>
       <section class="general-container rounded bg-light px-2 mt-5">
         <h1 class="pb-2 fs-1 fw-bold text-center" id="about">A little bit about me</h1>
         <div class="about-content">
           <img src="images\File_000.jpeg" class="bio-img rounded" alt="bio-img">
           <p class="fs-3 pt-2 bio-content">
-            Hello, my name is Tony Le. I am working on my undergraduate degree. I am currently a senior
+            I am working on my undergraduate degree. I am currently a senior
             in Portland State University with the major of Computer Science. I will graduate in June 2022.
             I am a team player, a problem solver and a fast learner. I had access to a computer from a
             young age. The first programming language I learned was Pascal. My coursework includes machine
@@ -62,7 +65,7 @@
           <div class="card skill-card mx-2 my-2">
             <img src="images\python.png" class="card-img-top" alt="python-language">
             <div class="card-body">
-              <p class="card-title text-center fs-5">Python</p>
+              <p class="card-title text-center fs-6">Python</p>
               <div class="progress">
                 <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">5/5</div>
               </div>
@@ -71,7 +74,7 @@
           <div class="card skill-card mx-2 my-2">
             <img src="images\c.png" class="card-img-top" alt="c-family-language">
             <div class="card-body">
-              <p class="card-title text-center fs-5">C/C++/C#</p>
+              <p class="card-title text-center fs-6">C/C++/C#</p>
               <div class="progress">
                 <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">5/5</div>
               </div>
@@ -80,7 +83,7 @@
           <div class="card skill-card mx-2 my-2">
             <img src="images\java.png" class="card-img-top" alt="java-language">
             <div class="card-body">
-              <p class="card-title text-center fs-5">Java</p>
+              <p class="card-title text-center fs-6">Java</p>
               <div class="progress">
                 <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">5/5</div>
               </div>
@@ -89,7 +92,7 @@
           <div class="card skill-card mx-2 my-2">
             <img src="images\javascript.png" class="card-img-top" alt="javascript-language">
             <div class="card-body">
-              <p class="card-title text-center fs-5">JavaScript</p>
+              <p class="card-title text-center fs-6">JavaScript</p>
               <div class="progress">
                 <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">4/5</div>
               </div>
@@ -98,7 +101,7 @@
           <div class="card skill-card mx-2 my-2">
             <img src="images\html.png" class="card-img-top" alt="html-css-language">
             <div class="card-body">
-              <p class="card-title text-center fs-5">HTML/CSS</p>
+              <p class="card-title text-center fs-6">HTML/CSS</p>
               <div class="progress">
                 <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">3/5</div>
               </div>
@@ -107,7 +110,7 @@
           <div class="card skill-card mx-2 my-2">
             <img src="images\vs.png" class="card-img-top" alt="vs-ide">
             <div class="card-body">
-              <p class="card-title text-center fs-5">Visual Studio</p>
+              <p class="card-title text-center fs-6">Visual Studio</p>
               <div class="progress">
                 <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">5/5</div>
               </div>
@@ -116,7 +119,7 @@
           <div class="card skill-card mx-2 my-2">
             <img src="images\android.png" class="card-img-top" alt="android-ide">
             <div class="card-body">
-              <p class="card-title text-center fs-5">Android Studio</p>
+              <p class="card-title text-center fs-6">Android Studio</p>
               <div class="progress">
                 <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">4/5</div>
               </div>
@@ -125,7 +128,7 @@
           <div class="card skill-card mx-2 my-2">
             <img src="images\unity.png" class="card-img-top" alt="unity-engine">
             <div class="card-body">
-              <p class="card-title text-center fs-5">Unity</p>
+              <p class="card-title text-center fs-6">Unity</p>
               <div class="progress">
                 <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">4/5</div>
               </div>
@@ -134,7 +137,7 @@
           <div class="card skill-card mx-2 my-2">
             <img src="images\git.png" class="card-img-top" alt="git-github">
             <div class="card-body">
-              <p class="card-title text-center fs-5">Git/GitHub</p>
+              <p class="card-title text-center fs-6">Git/GitHub</p>
               <div class="progress">
                 <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">5/5</div>
               </div>
@@ -143,7 +146,7 @@
           <div class="card skill-card mx-2 my-2">
             <img src="images\blender.png" class="card-img-top" alt="blender">
             <div class="card-body">
-              <p class="card-title text-center fs-5">Blender</p>
+              <p class="card-title text-center fs-6">Blender</p>
               <div class="progress">
                 <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">4/5</div>
               </div>
@@ -152,7 +155,7 @@
           <div class="card skill-card mx-2 my-2">
             <img src="images\scrum.png" class="card-img-top" alt="scrum">
             <div class="card-body">
-              <p class="card-title text-center fs-5">Scrum/Agile</p>
+              <p class="card-title text-center fs-6">Scrum/Agile</p>
               <div class="progress">
                 <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">5/5</div>
               </div>
@@ -161,7 +164,7 @@
           <div class="card skill-card mx-2 my-2">
             <img src="images\oop.png" class="card-img-top" alt="object-oriented">
             <div class="card-body">
-              <p class="card-title text-center fs-5">OO-Programming</p>
+              <p class="card-title text-center fs-6">OOP</p>
               <div class="progress">
                 <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">5/5</div>
               </div>
@@ -170,7 +173,7 @@
           <div class="card skill-card mx-2 my-2">
             <img src="images\ai.png" class="card-img-top" alt="artificial-intel">
             <div class="card-body">
-              <p class="card-title text-center fs-5">AI/ML</p>
+              <p class="card-title text-center fs-6">AI/ML</p>
               <div class="progress">
                 <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">4/5</div>
               </div>
@@ -179,7 +182,7 @@
           <div class="card skill-card mx-2 my-2">
             <img src="images\vr.png" class="card-img-top" alt="vr-programming">
             <div class="card-body">
-              <p class="card-title text-center fs-5">Virtual Reality</p>
+              <p class="card-title text-center fs-6">Virtual Reality</p>
               <div class="progress">
                 <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">4/5</div>
               </div>
@@ -189,7 +192,7 @@
       </section>
       <section class="general-container rounded bg-light px-2 mt-5">
         <h1 class="fs-1 fw-bold text-center" id="projects">Some highlight school projects</h1>
-        <div id="projectsCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div id="projectsCarousel" class="carousel carousel-dark slide" data-bs-ride="false">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -197,56 +200,41 @@
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <div class="carousel-caption">
-                <p class="fs-3 text-dark">Bank Term Deposit Subscription Projection</p>
+              <div class="carousel-caption text-left">
+                <h2 class="fs-3 text-dark">Bank Term Deposit Subscription Projection</h2>
                 <a href="https://github.com/PSUOpenDev/FinalProjectMachineLearning" target="_blank">Link to AI project's GitHub repo</a>
                 <p class="fs-6 text-dark pt-3">
                   This is the final project that I work with my classmates in a team of five. 
-                  The language that we chose to work on was Python.
-                  We also used libraries such as pandas, scikit-learn, tensorflow, and numpy to articulate our
+                  A Python program that utilized pandas, scikit-learn, tensorflow, and numpy to articulate our
                   data to achieve the result of projecting a probability of whether a customer will subscribe
-                  to a term deposit at a bank or not. We used data from a Portuguese banking institution to do
-                  the prediction. The main reason we built this project was to assess the machine learning
-                  algorithms that we learned in the course with the real life data. We wanted to measure the
-                  accuracy of them and to empower ourselves with new technologies that help increase the process
-                  of big data calculation. We used three models including Multi-layer Perceptron, Gaussian Naive
-                  Bayes, and K-Means. The results were very fascinating. We did our best to minimize the errors
-                  and decrease the runtime of the project.
+                  to a term deposit at a bank or not. Three models was used including Multi-layer Perceptron, 
+                  Gaussian Naive Bayes, and K-Means.
                 </p>
               </div>
             </div>
             <div class="carousel-item">
               <div class="carousel-caption">
-                <p class="fs-3 text-dark">Caro Game with AI player using Rust</p>
+                <h2 class="fs-3 text-dark">Caro Game with AI player using Rust</h2>
                 <a href="https://github.com/PDX-RUST-TTTS/Project-Caro" target="_blank">Link to caro project's GitHub repo</a>
                 <p class="fs-6 text-dark pt-3">
-                  The game was written in a new language that none of us had any knowledge before.
-                  Rust is a fun language to learn and program. It will correct the bugs you might have
-                  in your code and give suggestions on how your code should be written. The project was
-                  a substitute for our final in this course. We decided to recreate the game in our childhood.
-                  It is called "caro" which basically is an expanded version of tic-tac-toe. But instead of
-                  matching three, you have to match five of the same symbol. We made an AI player to compete
-                  against human player. One of our friend tried the game.We made it so smart that it won 
-                  5/5 matches with him. The game was a quite success for the AI also for the new language that
-                  we only have a chance to learn in 2 months. We used a Rust GUI library, Iced version 0.3.0 
-                  cross-platform GUI library inspired by Elm. The game is in MIT license and was built on stable Rust.
+                  The game was written in Rust which is a fun language. It will correct the bugs you might have
+                  in your code and give suggestions on how your code should be written. We decided to recreate
+                  the game called "caro" which is an expanded version of tic-tac-toe. You have to match five 
+                  instead of three. We made an AI player to compete against human. We used Iced version 0.3.0
+                  cross-platform GUI library with a MIT license.
                 </p>
               </div>
             </div>
             <div class="carousel-item">
               <div class="carousel-caption">
-                <p class="fs-3 text-dark">WonderTix CRM Capstone Project</p>
+                <h2 class="fs-3 text-dark">WonderTix CRM Capstone Project</h2>
                 <a href="https://github.com/WonderTix/CRM" target="_blank">Link to capstone project's GitHub repo</a>
                 <p class="fs-6 text-dark pt-3">
                   My capstone project was writing a customer relation management (CRM) web-application for the
                   PortlandPlayHouse. This was a first ever ongoing capstone project that is still being developed
-                  by the next capstone teams for the years to come. We were a team of seven students and were proud
-                  to be the second team to work on this project. We built the structure, design the UI and the
-                  back-end for the CRM. And we also continued building the left-over features from the first team
-                  for the ticketing system. At the and of the capstone, we had completed the UI design, database and back-end
-                  services. The next step is to create the front-end using ReactJS and HTML/CSS. The project is now 
-                  becoming open-source on GitHub. We used ReactJS and NodeJS for front-end, PostgreSQL for database,
-                  and Typescript for back-end. We also planned to host the site in the near future.
+                  by the next capstone teams for the years to come. We had completed the UI design ReactJS and 
+                  HTML/CSS, database with PostgreSQL and back-end services with TypeScript. The project is now 
+                  open-source on GitHub.
                 </p>
               </div>
             </div>
@@ -263,19 +251,22 @@
       </section>
       <section class="general-container rounded bg-light bg-opacity-75 px-2 mt-5">
         <h1 class="fs-1 fw-bold text-center" id="contact">You can always contact me</h1>
-        <p class="fs-4 text-center text-secondary">through email since we're not that close yet</p>
+        <h2 class="fs-4 text-center text-secondary">through email since we're not that close yet</h2>
         <form class="p-1 contact-form mx-auto">
           <div class="row mb-2 mb-lg-3 mb-md-3 mt-1 mt-sm-2 mt-md-3">
+            <label for="name" hidden>Your name:</label>
             <div class="col-12 px-3">
               <input class="form-control" name="name" id="name" type="text" placeholder="with your name here">
             </div>
           </div>
           <div class="row mb-2 mb-lg-3 mb-md-3">
+            <label for="email" hidden>Your email:</label>
             <div class="col-12 px-3">
               <input class="form-control" name="email" id="email" type="email" placeholder="and your email address here">
             </div>
           </div>
           <div class="row mb-2 mb-lg-3 mb-md-3">
+            <label for="message" hidden>Your message:</label>
             <div class="col-12 px-3">
               <textarea class="form-control" name="message" id="message" rows="5" placeholder="and your sincere message here"></textarea>
             </div>
