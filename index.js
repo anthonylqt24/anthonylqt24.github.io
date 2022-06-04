@@ -26,26 +26,24 @@ function handleSubmit(event) {
   
 
   if (inputs > 0) {
-    toastMsg.innerHTML = "<p>You have entered:</p>";
-    if (username != "") {
-      toastMsg.innerHTML += "<p>Username: " + username + "</p>";
-    } else {
-      toastMsg.innerHTML += "<p>Username: not entered</p>";
+    toastMsg.innerHTML = "";
+    if (username == "") {
+      toastMsg.innerHTML += "<p>Please enter your name.</p>";
     }
 
-    if (email != "") {
-      toastMsg.innerHTML += "<p>Email: " + email + "</p>";
-    } else {
-      toastMsg.innerHTML += "<p>Email: no email entered</p>";
+    if (email == "") {
+      toastMsg.innerHTML += "<p>Please enter your email.</p>";
     }
 
-    if (message != "") {
-      toastMsg.innerHTML += "<p>Message: " + message + "</p>";
-    } else {
-      toastMsg.innerHTML += "<p>Message: no message at all</p>";
+    if (message == "") {
+      toastMsg.innerHTML += "<p>Please enter your message.</p>";
+    }
+
+    if (toastMsg.innerHTML == "") {
+      toastMsg.innerHTML = "<p>Thank you for your email. Talk to you soon.</p>";
     }
   } else {
-    toastMsg.innerHTML = "<p>You must enter some data to submit this form</p>";
+    toastMsg.innerHTML = "<p>You must enter some data to submit this form.</p>";
   }
 
   const msg = new bootstrap.Toast(toast);
