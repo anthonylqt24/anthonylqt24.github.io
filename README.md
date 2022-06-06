@@ -6,10 +6,15 @@ This is a project for CS410-Web-Intro. The project is my porfolio website that I
 You will need Visual Studio Code to recreate the website, with a live server feature built-in. And you will need a web browsers to run it. I recommend Google Chrome, since my JavaScript code will run best on it. Firefox, Safari and other browsers also work.
 
 In making this website, I read documentations and follow tutorials from:
-    The Bootstrap website: https://getbootstrap.com/docs/5.2/getting-started/introduction/
-    The W3School website: https://www.w3schools.com/
-    The png images are from: https://www.kindpng.com/
-    The background image: https://unsplash.com/photos/ahYX46whD8s
+
+The Bootstrap website: https://getbootstrap.com/docs/5.2/getting-started/introduction/
+
+The W3School website: https://www.w3schools.com/
+
+The png images are from: https://www.kindpng.com/
+
+The background image: https://unsplash.com/photos/ahYX46whD8s
+
 All of the images used in this website are free of charge and belong to their respective owners.
 
 The site is deployed using the GitHub Pages feature.
